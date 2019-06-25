@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.creditpilot.gateway.service.TestService;
 
 @RestController
+@RequestMapping
 public class TestRESTController {
-    public String greeting(Authentication authentication) {
+    @GetMapping(value = "/message")
+    public String showMessage( ) {
         return "Spring Security In-memory Authentication Example";
     }
 }
