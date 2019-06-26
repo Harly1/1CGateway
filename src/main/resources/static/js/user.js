@@ -1,7 +1,6 @@
 //Отправка сообщений на сервер
 function send() {
     //  var t = document.getElementById("username").value;
-
     $('#myform').submit(function (e) {
         e.preventDefault();
 
