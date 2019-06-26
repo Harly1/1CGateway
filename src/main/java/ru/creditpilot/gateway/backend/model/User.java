@@ -11,7 +11,6 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@JsonDeserialize(as = User.class)
 public class User {
     @Id
     long id;

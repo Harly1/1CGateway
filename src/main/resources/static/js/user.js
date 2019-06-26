@@ -13,16 +13,9 @@ function send() {
         };
 
         $.ajax({
-            type: $(this).attr('method'),
-            url: $(this).attr('action'),
-            data: $(this).serializeArray(),
-            // async: false,
-            //  headers: {
-            //      'Accept': 'application/json',
-            //      'Content-Type': 'application/json'
-            //  },
-            contentType: "application/json",
-            dataType: "json",
+            type: $(this).attr('method'),   // POST
+            url:  $(this).attr('action'),   // "/data"
+            data: $(this).serializeArray(), // данные из всех input
             success: function (result) {
                 alert('Форма отправлена');
             }
